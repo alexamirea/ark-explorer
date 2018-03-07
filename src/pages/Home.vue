@@ -2,8 +2,13 @@
   <div class="max-w-2xl mx-auto md:pt-5">
     <content-header>{{ $t("Latest transactions and blocks") }}</content-header>
 
-    <section v-if="priceChart" class="hidden md:block mb-5 bg-theme-feature-background xl:rounded-lg">
-      <chart-wrapper></chart-wrapper>
+    <section class="md:block mb-5 bg-theme-feature-background xl:rounded-lg">
+      <!--<chart-wrapper></chart-wrapper>-->
+      <div class="temp-graph-main-content">
+        <div class="temp-graph-container"></div>
+        <p class="temp-graph-placeholder">Coming soon!</p>
+        <img src="@/assets/images/default-graph.png">
+      </div>
     </section>
 
     <section class="page-section py-5 md:py-10">
